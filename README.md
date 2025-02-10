@@ -1,0 +1,2 @@
+# CSS calc() incompatibility issues
+This repository demonstrates a common but easily overlooked issue when using the `calc()` function in CSS.  The problem arises when attempting to combine incompatible units within the `calc()` function. This often leads to unexpected layout behavior.  The `bug.css` file shows an example where `em` and `px` are mixed which can produce inconsistent results across different browsers and screen sizes. The `bugSolution.css` file provides a solution by ensuring consistent units are used within the `calc()` function. 
