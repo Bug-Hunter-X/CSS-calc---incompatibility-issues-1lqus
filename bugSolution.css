@@ -1,0 +1,9 @@
+To solve this, make sure to use consistent units within the `calc()` expression.  For example, convert `px` to `em` or vice-versa to ensure compatibility.  Alternatively, if possible restructure your CSS to avoid the need for combining incompatible units.  The following example demonstrates a solution using consistent units (em):
+
+```css
+/* bugSolution.css */
+.container {
+  width: calc(100% - 2.5em); /* Assuming 20px is roughly equivalent to 2.5em */
+}
+```
+This ensures that the calculation is performed using a consistent unit, leading to a more reliable and predictable layout.
